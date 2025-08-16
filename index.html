@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cookware Store</title>
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header>
+        <div class="top-bar">
+            <span>Contact | Sitemap</span>
+            <span class="right">Language | Currency</span>
+        </div>
+        <div class="header-main">
+            <h1>Cookware</h1>
+            <div class="search-cart">
+                <input type="text" placeholder="Search...">
+                <span class="cart">🛒 My Cart</span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <aside class="sidebar">
+            <h2>Categories</h2>
+            <ul>
+                <button>Cookware</button>
+                <button>Cook Tools</button>
+                <button>Cutlery</button>
+                <button>Bakeware</button>
+                <button>Tabletop</button>
+                <button>Bar</button>
+                <button>Housekeeping</button>
+                <button>Outdoor</button>
+            </ul>
+
+            <h2>Specials</h2>
+            <div class="special-item">
+                <img src="img/tostadora.png" alt="Special">
+                <div class="special-info">
+                <p class="old-price">$13.74</p>
+                <p class="new-price">$16.10</p>
+                </div>
+            </div>
+        </aside>
+
+        <section class="content">
+            <div class="banner">
+                <img src="img/ollas_acopladas.png" alt="Cookware Banner">
+            </div>
+
+            <div class="category-grid">
+                <div class="cat-item">Cookware Sets</div>
+                <div class="cat-item">Cooking Utensils</div>
+                <div class="cat-item">Ovenware</div>
+                <div class="cat-item">Grill Pans</div>
+                <div class="cat-item">Roasters</div>
+                <div class="cat-item">Woks</div>
+                <div class="cat-item">Saucepans</div>
+                <div class="cat-item">Dutch Ovens</div>
+                <div class="cat-item">Knives</div>
+            </div>
+
+            <div class="offer">
+                <h3>Special Offer!</h3>
+                <p>Save up to 30% on Cooking Items</p>
+            </div>
+
+            <h2>Featured Products</h2>
+            <div class="products">
+                <div class="product">
+                    <img src="img/cubiertos.png" alt="">
+                    <p class="price">$91.19</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/olla.png" alt="">
+                    <p class="price">$173.15</p>
+                    <button>Add to Cart</button>
+                </div>
+                <div class="product">
+                    <img src="img/ollas_acopladas2.png" alt="">
+                    <p class="price">$11.25</p>
+                    <button>Add to Cart</button>
+                </div>
+            </div>
+               <div class="product">
+                    <img src="img/cuchillos.png" alt="">
+                    <p class="price">$11.25</p>
+                    <button>Add to Cart</button>
+                </div>
+                
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-cols">
+            <div>
+                <h4>Information</h4>
+                <ul>
+                    <li>Privacy Policy</li>
+                    <li>Terms</li>
+                    <li>Contact</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Categories</h4>
+                <ul>
+                    <li>Cookware</li>
+                    <li>Tools</li>
+                </ul>
+            </div>
+            <div>
+                <h4>Follow Us</h4>
+                <p>Facebook | Twitter</p>
+            </div>
+        </div>
+        <p class="copy">© 2025 Cookware Store</p>
+    </footer>
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background: #f7f7f7;
+    width: 1000px;
+    padding-left: 450px;
+}
+.banner img {
+    height: 500px;
+    width: 100px;
+}
+
+.top-bar {
+    background: #ccc;
+    padding: 5px 20px;
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-main {
+    background: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+    box-shadow: #000000 0px 0px 5px 0px;
+}
+
+.search-cart input {
+    padding: 5px;
+}
+.special-info {
+    border: 2px solid #000;
+    margin-top: 0;
+}
+.sidebar {
+    width: 20%;
+    background: white;
+    padding: 20px;
+}
+
+.sidebar h2 {
+    font-size: 18px;
+    background-color: rgb(48, 48, 48);
+    color: white;
+    text-align: center;
+    border-bottom: none;
+    margin-bottom: 10px;
+    padding: 15px 0;
+    text-align: left;
+    padding-left: 10px;
+    border-radius: 3px;
+    margin-bottom: 0;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 5px 0;
+    cursor: pointer;
+}
+
+.special-item {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.special-item img {
+    width: 100%;
+    border: 2px solid #000;
+    margin-top: 0;
+}
+.content {
+    width: 80%;
+    padding: 20px;
+}
+
+main {
+    display: flex;
+}
+.banner img {
+    width: 100%;
+}
+
+.category-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.cat-item {
+    background: #eaeaea;
+    padding: 10px;
+    text-align: center;
+}
+
+.offer {
+    background: #ffd;
+    padding: 15px;
+    margin-top: 20px;
+    border: 1px solid #ccc;
+}
+
+.products {
+    display: flex;
+    gap: 20px;
+    margin-top: 20px;
+}
+.product img {
+    height: 400px;
+}
+
+.product {
+    background: white;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ddd;
+    width: 30%;
+}
+
+.product img {
+    width: 100%;
+}
+
+.product .price {
+    font-weight: bold;
+    margin: 0;
+}
+
+footer {
+    background: #222;
+    color: white;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+.footer-cols {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+}
+
+.copy {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 12px;
+}
+.sidebar button {
+    width: 100%;
+    height: 35px;
+}
+
+    </style>
+</body>
+</html>
